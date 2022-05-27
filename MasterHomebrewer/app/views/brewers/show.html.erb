@@ -9,7 +9,37 @@
   <%= button_to "Destroy this brewer", @brewer, method: :delete %>
 </div>
 
+<h2>Add score_sheet</h2>
+
+
+<%= form_with model: [ @brewer, @brewer.score_sheets.build] do 
+  |form| %>
+  <p>
+    <%= form.label :category %><br />
+    <%= form.text_field :category %>
+  </p>
+  <p>
+    <%= form.label :score %><br />
+    <%= form.text_field :score %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
 
 <h2>Score Sheets</h2>
+
+<table>
+<tr>
+  <th>Category</th>
+  <th>Score</th>
+</tr>
+<%= @brewer.score_sheets.each do |score_sheet| %>
+  <tr>
+    <td><%= score_sheet.category %></td>
+    <td><%= score_sheet.score %></td>
+  </tr>
+<% end %>
+</table>
 
 <%= render @brewer.score_sheets %>

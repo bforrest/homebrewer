@@ -21,17 +21,9 @@ class ScoreSheetsController < ApplicationController
 
   # POST /score_sheets or /score_sheets.json
   def create
-    @score_sheet = ScoreSheet.new(score_sheet_params)
-
-    respond_to do |format|
-      if @score_sheet.save
-        format.html { redirect_to score_sheet_url(@score_sheet), notice: "Score sheet was successfully created." }
-        format.json { render :show, status: :created, location: @score_sheet }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @score_sheet.errors, status: :unprocessable_entity }
-      end
-    end
+    @brewer = Brewer.find(params[:brewer_id])
+    @score_sheet = @brewer.score_sheets.create(score_sheet_params)
+    redirect_to brewer_path(@brewer)
   end
 
   # PATCH/PUT /score_sheets/1 or /score_sheets/1.json

@@ -31,15 +31,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_27_191516) do
     t.index ["brewer_id"], name: "index_score_sheets_on_brewer_id"
   end
 
-  create_table "scores", force: :cascade do |t|
-    t.string "category"
-    t.integer "score"
-    t.bigint "brewer_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["brewer_id"], name: "index_scores_on_brewer_id"
-  end
-
   add_foreign_key "score_sheets", "brewers"
-  add_foreign_key "scores", "brewers"
 end
