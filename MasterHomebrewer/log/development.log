@@ -1,0 +1,363 @@
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "master_homebrewer_development" ENCODING = 'unicode'[0m
+  [1m[35m (66.3ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+Started GET "/" for 172.26.0.1 at 2022-05-27 15:35:26 +0000
+Cannot render console from 172.26.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /ems/ruby/3.1.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /ems/ruby/3.1.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.3ms | Allocations: 634)
+Completed 200 OK in 80ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 4912)
+
+
+Started GET "/" for 172.28.0.1 at 2022-05-27 15:49:31 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /ems/ruby/3.1.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /ems/ruby/3.1.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.7ms | Allocations: 526)
+Completed 200 OK in 29ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 3574)
+
+
+Started GET "/" for 172.28.0.1 at 2022-05-27 18:09:12 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /ems/ruby/3.1.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /ems/ruby/3.1.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.6ms | Allocations: 526)
+Completed 200 OK in 27ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 3574)
+
+
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5829624265868726925)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBrewers (20220527181419)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "brewers" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "club" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220527181419"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateScores (20220527181449)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "scores" ("id" bigserial primary key, "category" character varying, "score" integer, "brewer_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_a6fc626e8b"
+FOREIGN KEY ("brewer_id")
+  REFERENCES "brewers" ("id")
+)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE INDEX "index_scores_on_brewer_id" ON "scores" ("brewer_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220527181449"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-05-27 18:19:40.342292"], ["updated_at", "2022-05-27 18:19:40.342292"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5829624265868726925)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.28.0.1 at 2022-05-27 18:20:21 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /ems/ruby/3.1.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /ems/ruby/3.1.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.7ms | Allocations: 526)
+Completed 200 OK in 26ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 3598)
+
+
+Started GET "/brewer" for 172.28.0.1 at 2022-05-27 18:20:28 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/brewer"):
+  
+Started GET "/brewers" for 172.28.0.1 at 2022-05-27 18:20:30 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.6ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1532)
+  Rendered layout layouts/application.html.erb (Duration: 758.7ms | Allocations: 73076)
+Completed 200 OK in 782ms (Views: 761.2ms | ActiveRecord: 0.6ms | Allocations: 74868)
+
+
+Started GET "/brewers/new" for 172.28.0.1 at 2022-05-27 18:20:33 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/new.html.erb within layouts/application
+  Rendered brewers/_form.html.erb (Duration: 59.2ms | Allocations: 4926)
+  Rendered brewers/new.html.erb within layouts/application (Duration: 61.7ms | Allocations: 5291)
+  Rendered layout layouts/application.html.erb (Duration: 69.0ms | Allocations: 6419)
+Completed 200 OK in 85ms (Views: 70.6ms | ActiveRecord: 2.6ms | Allocations: 10823)
+
+
+Started POST "/brewers" for 172.28.0.1 at 2022-05-27 18:20:42 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "brewer"=>{"first_name"=>"Barry", "last_name"=>"Forrest", "club"=>"Cap & Hare"}, "commit"=>"Create Brewer"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/brewers_controller.rb:27:in `block in create'
+  [1m[36mBrewer Create (0.6ms)[0m  [1m[32mINSERT INTO "brewers" ("first_name", "last_name", "club", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Barry"], ["last_name", "Forrest"], ["club", "Cap & Hare"], ["created_at", "2022-05-27 18:20:42.989073"], ["updated_at", "2022-05-27 18:20:42.989073"]]
+  ↳ app/controllers/brewers_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/brewers_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/brewers/1
+Completed 302 Found in 11ms (ActiveRecord: 1.7ms | Allocations: 4044)
+
+
+Started GET "/brewers/1" for 172.28.0.1 at 2022-05-27 18:20:43 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.8ms | Allocations: 262)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 30.2ms | Allocations: 1770)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 2870)
+Completed 200 OK in 45ms (Views: 38.5ms | ActiveRecord: 0.5ms | Allocations: 5656)
+
+
+Started GET "/brewers" for 172.28.0.1 at 2022-05-27 18:20:47 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1269)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 2280)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.3ms | Allocations: 2593)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5829624265868726925)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateScores (20220527181449)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE "scores"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220527181449"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBrewers (20220527181419)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "brewers"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220527181419"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5829624265868726925)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5829624265868726925)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBrewers (20220527181419)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "brewers" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "club" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220527181419"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateScores (20220527181449)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "scores" ("id" bigserial primary key, "category" character varying, "score" integer, "brewer_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_a6fc626e8b"
+FOREIGN KEY ("brewer_id")
+  REFERENCES "brewers" ("id")
+)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE INDEX "index_scores_on_brewer_id" ON "scores" ("brewer_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220527181449"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateScoreSheets (20220527191516)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "score_sheets" ("id" bigserial primary key, "category" character varying, "score" integer, "brewer_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_f3c94f88c6"
+FOREIGN KEY ("brewer_id")
+  REFERENCES "brewers" ("id")
+)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE INDEX "index_score_sheets_on_brewer_id" ON "score_sheets" ("brewer_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220527191516"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5829624265868726925)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/brewers" for 172.28.0.1 at 2022-05-27 19:22:15 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.6ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1991)
+  Rendered layout layouts/application.html.erb (Duration: 202.1ms | Allocations: 22711)
+Completed 200 OK in 225ms (Views: 207.0ms | ActiveRecord: 0.6ms | Allocations: 27868)
+
+
+Started GET "/brewers/new" for 172.28.0.1 at 2022-05-27 19:22:17 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/new.html.erb within layouts/application
+  Rendered brewers/_form.html.erb (Duration: 16.8ms | Allocations: 3650)
+  Rendered brewers/new.html.erb within layouts/application (Duration: 19.4ms | Allocations: 4025)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 5152)
+Completed 200 OK in 38ms (Views: 28.5ms | ActiveRecord: 2.9ms | Allocations: 9086)
+
+
+Started POST "/brewers" for 172.28.0.1 at 2022-05-27 19:22:21 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "brewer"=>{"first_name"=>"", "last_name"=>"", "club"=>""}, "commit"=>"Create Brewer"}
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/new.html.erb within layouts/application
+  Rendered brewers/_form.html.erb (Duration: 3.8ms | Allocations: 3259)
+  Rendered brewers/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3375)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 4472)
+Completed 422 Unprocessable Entity in 18ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 6292)
+
+
+Started POST "/brewers" for 172.28.0.1 at 2022-05-27 19:22:30 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "brewer"=>{"first_name"=>"Barry", "last_name"=>"Forrest", "club"=>""}, "commit"=>"Create Brewer"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/brewers_controller.rb:27:in `block in create'
+  [1m[36mBrewer Create (0.7ms)[0m  [1m[32mINSERT INTO "brewers" ("first_name", "last_name", "club", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "Barry"], ["last_name", "Forrest"], ["club", ""], ["created_at", "2022-05-27 19:22:30.690761"], ["updated_at", "2022-05-27 19:22:30.690761"]]
+  ↳ app/controllers/brewers_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/brewers_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/brewers/1
+Completed 302 Found in 10ms (ActiveRecord: 1.5ms | Allocations: 3824)
+
+
+Started GET "/brewers/1" for 172.28.0.1 at 2022-05-27 19:22:30 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.6ms | Allocations: 262)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 12.2ms | Allocations: 1798)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 2901)
+Completed 200 OK in 27ms (Views: 21.0ms | ActiveRecord: 0.6ms | Allocations: 5691)
+
+
+Started GET "/brewers" for 172.28.0.1 at 2022-05-27 19:22:36 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1279)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 2292)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.3ms | Allocations: 2598)
+
+
+Started GET "/brewers/1" for 172.28.0.1 at 2022-05-27 19:22:38 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 791)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 1795)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 2617)
+
+
+Started GET "/brewers" for 172.28.0.1 at 2022-05-27 19:22:45 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1161)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 2172)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 2441)
+
+
+Started GET "/" for 172.29.0.1 at 2022-05-27 19:31:33 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /ems/ruby/3.1.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /ems/ruby/3.1.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.2ms | Allocations: 634)
+Completed 200 OK in 78ms (Views: 28.5ms | ActiveRecord: 0.0ms | Allocations: 4961)
+
+
+Started GET "/brewers" for 172.29.0.1 at 2022-05-27 19:31:40 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.6ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 1.8ms | Allocations: 282)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 33.5ms | Allocations: 6321)
+  Rendered layout layouts/application.html.erb (Duration: 927.2ms | Allocations: 37795)
+Completed 200 OK in 955ms (Views: 926.4ms | ActiveRecord: 3.8ms | Allocations: 41004)
+
+
+Started GET "/brewers/1" for 172.29.0.1 at 2022-05-27 19:31:44 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1168)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 2269)
+Completed 200 OK in 28ms (Views: 14.7ms | ActiveRecord: 0.6ms | Allocations: 5410)
+
+
+Started GET "/brewers" for 172.29.0.1 at 2022-05-27 19:31:48 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1161)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 2174)
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 0.4ms | Allocations: 2456)
+
+
+Started GET "/brewers/new" for 172.29.0.1 at 2022-05-27 19:31:52 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/new.html.erb within layouts/application
+  Rendered brewers/_form.html.erb (Duration: 64.2ms | Allocations: 14655)
+  Rendered brewers/new.html.erb within layouts/application (Duration: 66.9ms | Allocations: 14991)
+  Rendered layout layouts/application.html.erb (Duration: 74.1ms | Allocations: 16114)
+Completed 200 OK in 77ms (Views: 75.7ms | ActiveRecord: 0.0ms | Allocations: 16508)
+
+
+Started POST "/brewers" for 172.29.0.1 at 2022-05-27 19:31:55 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "brewer"=>{"first_name"=>"", "last_name"=>"", "club"=>""}, "commit"=>"Create Brewer"}
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/new.html.erb within layouts/application
+  Rendered brewers/_form.html.erb (Duration: 3.8ms | Allocations: 3258)
+  Rendered brewers/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3374)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 4470)
+Completed 422 Unprocessable Entity in 17ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 6248)
+
+
+Started GET "/brewers" for 172.29.0.1 at 2022-05-27 19:31:57 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 30)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1250)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 2261)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.3ms | Allocations: 2532)
+
+

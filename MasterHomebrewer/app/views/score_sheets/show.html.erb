@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @score_sheet %>
+
+<div>
+  <%= link_to "Edit this score sheet", edit_score_sheet_path(@score_sheet) %> |
+  <%= link_to "Back to score sheets", score_sheets_path %>
+
+  <%= button_to "Destroy this score sheet", @score_sheet, method: :delete %>
+</div>
