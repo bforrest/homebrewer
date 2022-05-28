@@ -1295,3 +1295,117 @@ Processing by BrewersController#show as HTML
 Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 0.6ms | Allocations: 4767)
 
 
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 00:57:35 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.9ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 2.3ms | Allocations: 291)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 42.6ms | Allocations: 6782)
+  Rendered layout layouts/application.html.erb (Duration: 906.4ms | Allocations: 15929)
+Completed 500 Internal Server Error in 1002ms (ActiveRecord: 5.0ms | Allocations: 22521)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap/scss/bootstrap.
+        on line 1:1 of app/assets/stylesheets/application.bootstrap.scss
+>> @import 'bootstrap/scss/bootstrap';
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/assets/stylesheets/application.bootstrap.scss:1
+app/views/layouts/application.html.erb:9
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 00:59:53 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1479)
+  Rendered layout layouts/application.html.erb (Duration: 6274.2ms | Allocations: 130004)
+Completed 500 Internal Server Error in 6277ms (ActiveRecord: 0.4ms | Allocations: 130298)
+
+
+  
+ActionView::Template::Error (Multiple files with the same output path cannot be linked ("application.css")
+In "/usr/src/app/app/assets/config/manifest.js" these files were linked:
+  - /usr/src/app/app/assets/stylesheets/application.css
+  - /usr/src/app/app/assets/stylesheets/application.scss
+):
+  
+sprockets (4.0.3) lib/sprockets/base.rb:100:in `find_all_linked_assets'
+sprockets (4.0.3) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.0.3) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.0.3) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `block in synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:00:14 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1312)
+  Rendered layout layouts/application.html.erb (Duration: 134.8ms | Allocations: 31723)
+Completed 200 OK in 138ms (Views: 136.3ms | ActiveRecord: 0.4ms | Allocations: 32043)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:00:24 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1301)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 5755)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.4ms | Allocations: 6033)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:00:32 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 34)
+  [1m[36mScoreSheet Load (0.5ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 1]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 2.3ms | Allocations: 339)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 163.5ms | Allocations: 17274)
+  Rendered layout layouts/application.html.erb (Duration: 180.8ms | Allocations: 21825)
+Completed 200 OK in 204ms (Views: 180.3ms | ActiveRecord: 3.2ms | Allocations: 31127)
+
+
