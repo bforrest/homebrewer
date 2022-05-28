@@ -1409,3 +1409,1613 @@ Processing by BrewersController#show as HTML
 Completed 200 OK in 204ms (Views: 180.3ms | ActiveRecord: 3.2ms | Allocations: 31127)
 
 
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:07:09 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.1ms | Allocations: 212)
+  [1m[36mScoreSheet Load (0.5ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 1]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 1.5ms | Allocations: 266)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 13.3ms | Allocations: 3973)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 8745)
+Completed 200 OK in 54ms (Views: 33.8ms | ActiveRecord: 6.0ms | Allocations: 12632)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:07:12 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 1]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 0.3ms | Allocations: 87)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2587)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 7033)
+Completed 200 OK in 29ms (Views: 23.8ms | ActiveRecord: 0.6ms | Allocations: 7858)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:11:48 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.6ms | Allocations: 212)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 1]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 1.2ms | Allocations: 266)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 11.6ms | Allocations: 3951)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 8726)
+Completed 200 OK in 36ms (Views: 30.9ms | ActiveRecord: 0.8ms | Allocations: 10077)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:12:33 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.0ms | Allocations: 212)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 1]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 1.6ms | Allocations: 266)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 11.1ms | Allocations: 3967)
+  Rendered layout layouts/application.html.erb (Duration: 75.1ms | Allocations: 8742)
+Completed 200 OK in 83ms (Views: 77.6ms | ActiveRecord: 0.7ms | Allocations: 10124)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:12:36 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1527)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 5981)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.4ms | Allocations: 6348)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:12:40 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 1]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 0.2ms | Allocations: 87)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2563)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 7008)
+Completed 200 OK in 29ms (Views: 24.4ms | ActiveRecord: 0.7ms | Allocations: 7793)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:12:43 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1306)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 5758)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.2ms | Allocations: 6027)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:12:44 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 1]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 0.1ms | Allocations: 87)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2591)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 7035)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 0.7ms | Allocations: 7810)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:15:12 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.5ms | Allocations: 217)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 1]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 1.1ms | Allocations: 266)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 11.1ms | Allocations: 3960)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 8735)
+Completed 200 OK in 37ms (Views: 31.2ms | ActiveRecord: 0.7ms | Allocations: 10086)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:18:46 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.6ms | Allocations: 256)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 1]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 1.4ms | Allocations: 266)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 11.5ms | Allocations: 4011)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 8784)
+Completed 200 OK in 35ms (Views: 29.8ms | ActiveRecord: 0.6ms | Allocations: 10166)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:18:57 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.7ms | Allocations: 255)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 1]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 1.3ms | Allocations: 266)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 11.5ms | Allocations: 3996)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 8769)
+Completed 200 OK in 37ms (Views: 32.6ms | ActiveRecord: 0.6ms | Allocations: 10151)
+
+
+Started GET "/brewers/1/edit" for 172.30.0.1 at 2022-05-28 01:19:15 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/edit.html.erb within layouts/application
+  Rendered brewers/_form.html.erb (Duration: 4.4ms | Allocations: 2257)
+  Rendered brewers/edit.html.erb within layouts/application (Duration: 22.0ms | Allocations: 2677)
+  Rendered layout layouts/application.html.erb (Duration: 64.7ms | Allocations: 7453)
+Completed 200 OK in 88ms (Views: 83.2ms | ActiveRecord: 0.2ms | Allocations: 8827)
+
+
+Started PATCH "/brewers/1" for 172.30.0.1 at 2022-05-28 01:19:20 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "brewer"=>{"first_name"=>"Barry", "last_name"=>"Forrest", "club"=>"Cap & Hare"}, "commit"=>"Update Brewer", "id"=>"1"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/brewers_controller.rb:40:in `block in update'
+  [1m[36mBrewer Update (0.6ms)[0m  [1m[33mUPDATE "brewers" SET "club" = $1, "updated_at" = $2 WHERE "brewers"."id" = $3[0m  [["club", "Cap & Hare"], ["updated_at", "2022-05-28 01:19:20.434126"], ["id", 1]]
+  ↳ app/controllers/brewers_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/brewers_controller.rb:40:in `block in update'
+Redirected to http://localhost:3000/brewers/1
+Completed 302 Found in 14ms (ActiveRecord: 2.0ms | Allocations: 4662)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:19:20 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.8ms | Allocations: 206)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 1]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 1.9ms | Allocations: 266)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 13.5ms | Allocations: 3736)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 8271)
+Completed 200 OK in 40ms (Views: 30.5ms | ActiveRecord: 0.7ms | Allocations: 9184)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:21:23 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1430)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1525)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms | Allocations: 2860)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p style="color: green"><%= notice %></p>
+
+<%= render @brewer %>
+
+<div>
+  <%= link_to "Edit this brewer", edit_brewer_path(@brewer) class="btn btn-primary"%> |
+  <%= link_to "Back to brewers", brewers_path %>
+
+  <%= button_to "Destroy this brewer", @brewer, method: :delete %>
+</div>
+
+<h2>Add score_sheet</h2>
+
+
+<%= form_with model: [ @brewer, @brewer.score_sheets.build] do 
+  |form| %>
+  <p>
+    <%= form.label :category %><br />
+    <%= form.text_field :category %>
+  </p>
+  <p>
+    <%= form.label :score %><br />
+    <%= form.text_field :score %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+<h2>Score Sheets</h2>
+
+<table>
+<tr>
+  <th>Category</th>
+  <th>Score</th>
+</tr>
+<%= @brewer.score_sheets.each do |score_sheet| %>
+  <tr>
+    <td><%= score_sheet.category %></td>
+    <td><%= score_sheet.score %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= render @brewer.score_sheets %>
+):
+1:    <p style="color: green"><%= notice %></p>
+2:    
+3:    <%= render @brewer %>
+4:    
+5:    <div>
+6:      <%= link_to "Edit this brewer", edit_brewer_path(@brewer) class="btn btn-primary"%> |
+7:      <%= link_to "Back to brewers", brewers_path %>
+8:    
+9:      <%= button_to "Destroy this brewer", @brewer, method: :delete %>
+10:    </div>
+11:    
+12:    <h2>Add score_sheet</h2>
+13:    
+14:    
+15:    <%= form_with model: [ @brewer, @brewer.score_sheets.build] do 
+16:      |form| %>
+17:      <p>
+18:        <%= form.label :category %><br />
+19:        <%= form.text_field :category %>
+20:      </p>
+21:      <p>
+22:        <%= form.label :score %><br />
+23:        <%= form.text_field :score %>
+24:      </p>
+25:      <p>
+26:        <%= form.submit %>
+27:      </p>
+28:    <% end %>
+29:    
+30:    <h2>Score Sheets</h2>
+31:    
+32:    <table>
+33:    <tr>
+34:      <th>Category</th>
+35:      <th>Score</th>
+36:    </tr>
+37:    <%= @brewer.score_sheets.each do |score_sheet| %>
+38:      <tr>
+39:        <td><%= score_sheet.category %></td>
+40:        <td><%= score_sheet.score %></td>
+41:      </tr>
+42:    <% end %>
+43:    </table>
+44:    
+45:    <%= render @brewer.score_sheets %>
+  
+app/views/brewers/show.html.erb:6: syntax error, unexpected `class', expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected `class', expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected `class', expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected `class', expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected `class', expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected `class', expecting ')'
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:21:30 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 1.7ms | Allocations: 211)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1914)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 6703)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.3ms | Allocations: 7082)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:21:34 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1374)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1463)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms | Allocations: 2241)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p style="color: green"><%= notice %></p>
+
+<%= render @brewer %>
+
+<div>
+  <%= link_to "Edit this brewer", edit_brewer_path(@brewer) class="btn btn-primary"%> |
+  <%= link_to "Back to brewers", brewers_path %>
+
+  <%= button_to "Destroy this brewer", @brewer, method: :delete %>
+</div>
+
+<h2>Add score_sheet</h2>
+
+
+<%= form_with model: [ @brewer, @brewer.score_sheets.build] do 
+  |form| %>
+  <p>
+    <%= form.label :category %><br />
+    <%= form.text_field :category %>
+  </p>
+  <p>
+    <%= form.label :score %><br />
+    <%= form.text_field :score %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+<h2>Score Sheets</h2>
+
+<table>
+<tr>
+  <th>Category</th>
+  <th>Score</th>
+</tr>
+<%= @brewer.score_sheets.each do |score_sheet| %>
+  <tr>
+    <td><%= score_sheet.category %></td>
+    <td><%= score_sheet.score %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= render @brewer.score_sheets %>
+):
+1:    <p style="color: green"><%= notice %></p>
+2:    
+3:    <%= render @brewer %>
+4:    
+5:    <div>
+6:      <%= link_to "Edit this brewer", edit_brewer_path(@brewer) class="btn btn-primary"%> |
+7:      <%= link_to "Back to brewers", brewers_path %>
+8:    
+9:      <%= button_to "Destroy this brewer", @brewer, method: :delete %>
+10:    </div>
+11:    
+12:    <h2>Add score_sheet</h2>
+13:    
+14:    
+15:    <%= form_with model: [ @brewer, @brewer.score_sheets.build] do 
+16:      |form| %>
+17:      <p>
+18:        <%= form.label :category %><br />
+19:        <%= form.text_field :category %>
+20:      </p>
+21:      <p>
+22:        <%= form.label :score %><br />
+23:        <%= form.text_field :score %>
+24:      </p>
+25:      <p>
+26:        <%= form.submit %>
+27:      </p>
+28:    <% end %>
+29:    
+30:    <h2>Score Sheets</h2>
+31:    
+32:    <table>
+33:    <tr>
+34:      <th>Category</th>
+35:      <th>Score</th>
+36:    </tr>
+37:    <%= @brewer.score_sheets.each do |score_sheet| %>
+38:      <tr>
+39:        <td><%= score_sheet.category %></td>
+40:        <td><%= score_sheet.score %></td>
+41:      </tr>
+42:    <% end %>
+43:    </table>
+44:    
+45:    <%= render @brewer.score_sheets %>
+  
+app/views/brewers/show.html.erb:6: syntax error, unexpected `class', expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected `class', expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected `class', expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected `class', expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected `class', expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected `class', expecting ')'
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:21:46 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 1.3ms | Allocations: 212)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2044)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 6845)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.3ms | Allocations: 7685)
+
+
+Started PATCH "/brewers/1" for 172.30.0.1 at 2022-05-28 01:21:47 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "brewer"=>{"first_name"=>"Barry", "last_name"=>"Forrest", "club"=>"Cap & Hare"}, "commit"=>"Update Brewer", "id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+Redirected to http://localhost:3000/brewers/1
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms | Allocations: 1442)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:21:47 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 1]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 1.4ms | Allocations: 266)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 11.3ms | Allocations: 3404)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 7848)
+Completed 200 OK in 37ms (Views: 32.0ms | ActiveRecord: 0.7ms | Allocations: 8716)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:22:40 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1417)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1512)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms | Allocations: 2843)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p style="color: green"><%= notice %></p>
+
+<%= render @brewer %>
+
+<div>
+  <%= link_to "Edit this brewer", edit_brewer_path(@brewer) class:"btn btn-primary" %> |
+  <%= link_to "Back to brewers", brewers_path %>
+
+  <%= button_to "Destroy this brewer", @brewer, method: :delete %>
+</div>
+
+<h2>Add score_sheet</h2>
+
+
+<%= form_with model: [ @brewer, @brewer.score_sheets.build] do 
+  |form| %>
+  <p>
+    <%= form.label :category %><br />
+    <%= form.text_field :category %>
+  </p>
+  <p>
+    <%= form.label :score %><br />
+    <%= form.text_field :score %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+<h2>Score Sheets</h2>
+
+<table>
+<tr>
+  <th>Category</th>
+  <th>Score</th>
+</tr>
+<%= @brewer.score_sheets.each do |score_sheet| %>
+  <tr>
+    <td><%= score_sheet.category %></td>
+    <td><%= score_sheet.score %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= render @brewer.score_sheets %>
+):
+1:    <p style="color: green"><%= notice %></p>
+2:    
+3:    <%= render @brewer %>
+4:    
+5:    <div>
+6:      <%= link_to "Edit this brewer", edit_brewer_path(@brewer) class:"btn btn-primary" %> |
+7:      <%= link_to "Back to brewers", brewers_path %>
+8:    
+9:      <%= button_to "Destroy this brewer", @brewer, method: :delete %>
+10:    </div>
+11:    
+12:    <h2>Add score_sheet</h2>
+13:    
+14:    
+15:    <%= form_with model: [ @brewer, @brewer.score_sheets.build] do 
+16:      |form| %>
+17:      <p>
+18:        <%= form.label :category %><br />
+19:        <%= form.text_field :category %>
+20:      </p>
+21:      <p>
+22:        <%= form.label :score %><br />
+23:        <%= form.text_field :score %>
+24:      </p>
+25:      <p>
+26:        <%= form.submit %>
+27:      </p>
+28:    <% end %>
+29:    
+30:    <h2>Score Sheets</h2>
+31:    
+32:    <table>
+33:    <tr>
+34:      <th>Category</th>
+35:      <th>Score</th>
+36:    </tr>
+37:    <%= @brewer.score_sheets.each do |score_sheet| %>
+38:      <tr>
+39:        <td><%= score_sheet.category %></td>
+40:        <td><%= score_sheet.score %></td>
+41:      </tr>
+42:    <% end %>
+43:    </table>
+44:    
+45:    <%= render @brewer.score_sheets %>
+  
+app/views/brewers/show.html.erb:6: syntax error, unexpected label, expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected label, expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected label, expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected label, expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected label, expecting ')'
+app/views/brewers/show.html.erb:6: syntax error, unexpected label, expecting ')'
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:23:01 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.2ms | Allocations: 212)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 1]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 1.3ms | Allocations: 266)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 11.9ms | Allocations: 3969)
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 8743)
+Completed 200 OK in 38ms (Views: 33.1ms | ActiveRecord: 0.6ms | Allocations: 10173)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:24:43 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.0ms | Allocations: 212)
+  [1m[36mScoreSheet Load (0.2ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 1]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 1.2ms | Allocations: 266)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 3991)
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 8764)
+Completed 200 OK in 37ms (Views: 32.2ms | ActiveRecord: 0.5ms | Allocations: 10147)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:26:48 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 1.1ms | Allocations: 212)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2035)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 6835)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.3ms | Allocations: 7700)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:26:50 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.2ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 1.3ms | Allocations: 290)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 11.0ms | Allocations: 3590)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 8034)
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 0.7ms | Allocations: 8935)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:26:53 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2721)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 7166)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.4ms | Allocations: 7942)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:27:03 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.5ms | Allocations: 212)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 1.6ms | Allocations: 290)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 12.5ms | Allocations: 3936)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 8709)
+Completed 200 OK in 37ms (Views: 32.6ms | ActiveRecord: 0.5ms | Allocations: 10060)
+
+
+Started DELETE "/brewers/1" for 172.30.0.1 at 2022-05-28 01:27:07 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/brewers_controller.rb:52:in `destroy'
+  [1m[36mBrewer Destroy (1.1ms)[0m  [1m[31mDELETE FROM "brewers" WHERE "brewers"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/brewers_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/brewers_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/brewers
+Completed 302 Found in 14ms (ActiveRecord: 2.2ms | Allocations: 2733)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:27:07 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1428)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 5881)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.3ms | Allocations: 6242)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:27:11 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:37
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2548)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 6992)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.5ms | Allocations: 7767)
+
+
+Started GET "/brewers/2/edit" for 172.30.0.1 at 2022-05-28 01:27:22 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/edit.html.erb within layouts/application
+  Rendered brewers/_form.html.erb (Duration: 3.0ms | Allocations: 1884)
+  Rendered brewers/edit.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2245)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 6689)
+Completed 200 OK in 28ms (Views: 24.4ms | ActiveRecord: 0.3ms | Allocations: 7517)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:27:27 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1143)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 5595)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.3ms | Allocations: 5864)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:32:24 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 11.1ms | Allocations: 212)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 56.6ms | Allocations: 9765)
+  Rendered layout layouts/application.html.erb (Duration: 59.0ms | Allocations: 9859)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.3ms | Allocations: 11191)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/brewers":String
+
+            html_options = html_options.stringify_keys
+                                       ^^^^^^^^^^^^^^^):
+    4: 
+    5: <div>
+    6:   <%= link_to "Edit this brewer", edit_brewer_path(@brewer), class:"link-info" %> |
+    7:   <%= link_to "Back to brewers", brewers_path, class:"link-success" do %>
+    8:     <i class="bi bi-arrow-left"></i>
+    9:   <% end %>
+   10: </div>
+  
+app/views/brewers/show.html.erb:7
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:34:50 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.4ms | Allocations: 212)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:39
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 1.7ms | Allocations: 290)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 14.2ms | Allocations: 3936)
+  Rendered layout layouts/application.html.erb (Duration: 31.6ms | Allocations: 8802)
+Completed 200 OK in 39ms (Views: 34.2ms | ActiveRecord: 0.5ms | Allocations: 10232)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:34:54 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:39
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2505)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 6949)
+Completed 200 OK in 27ms (Views: 22.8ms | ActiveRecord: 0.5ms | Allocations: 7754)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:35:11 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.2ms | Allocations: 212)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:38
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 1.5ms | Allocations: 290)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 12.2ms | Allocations: 3913)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 8686)
+Completed 200 OK in 37ms (Views: 32.4ms | ActiveRecord: 0.8ms | Allocations: 10037)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:44:18 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.5ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.5ms | Allocations: 212)
+  [1m[36mScoreSheet Load (0.5ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 1.6ms | Allocations: 290)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 14.9ms | Allocations: 3962)
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 8828)
+Completed 200 OK in 62ms (Views: 35.9ms | ActiveRecord: 6.8ms | Allocations: 12698)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:46:13 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.5ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.2ms | Allocations: 212)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 1.3ms | Allocations: 290)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 11.5ms | Allocations: 3891)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 8664)
+Completed 200 OK in 38ms (Views: 31.5ms | ActiveRecord: 0.9ms | Allocations: 10045)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:46:20 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2495)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 6939)
+Completed 200 OK in 28ms (Views: 23.5ms | ActiveRecord: 0.7ms | Allocations: 7745)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:46:32 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2486)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 7023)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 0.6ms | Allocations: 7798)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:46:57 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2471)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 6915)
+Completed 200 OK in 28ms (Views: 24.4ms | ActiveRecord: 0.8ms | Allocations: 7690)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:47:02 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2489)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 6933)
+Completed 200 OK in 27ms (Views: 22.8ms | ActiveRecord: 0.7ms | Allocations: 7708)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:47:08 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1379)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 5913)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.2ms | Allocations: 6261)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:47:10 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2489)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 7026)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 0.5ms | Allocations: 7802)
+
+
+Started GET "/brewers/2/edit" for 172.30.0.1 at 2022-05-28 01:47:38 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/edit.html.erb within layouts/application
+  Rendered brewers/_form.html.erb (Duration: 3.3ms | Allocations: 2107)
+  Rendered brewers/edit.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2527)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 7303)
+Completed 200 OK in 31ms (Views: 26.6ms | ActiveRecord: 0.2ms | Allocations: 8639)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:47:42 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 1.2ms | Allocations: 206)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1699)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 6152)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.2ms | Allocations: 6521)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:47:44 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 1.4ms | Allocations: 290)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 3272)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 7716)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.5ms | Allocations: 8597)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:47:46 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.3ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2480)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 6924)
+Completed 200 OK in 29ms (Views: 23.7ms | ActiveRecord: 0.8ms | Allocations: 7699)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:47:47 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2477)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 7004)
+Completed 200 OK in 29ms (Views: 24.6ms | ActiveRecord: 0.5ms | Allocations: 7779)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:47:48 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2498)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 6942)
+Completed 200 OK in 32ms (Views: 27.0ms | ActiveRecord: 0.6ms | Allocations: 7717)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:48:33 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.1ms | Allocations: 212)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 1.3ms | Allocations: 291)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 11.4ms | Allocations: 3892)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 8747)
+Completed 200 OK in 40ms (Views: 35.1ms | ActiveRecord: 0.6ms | Allocations: 10099)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:48:48 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.6ms | Allocations: 212)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 1.3ms | Allocations: 290)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 11.6ms | Allocations: 3880)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 8736)
+Completed 200 OK in 38ms (Views: 33.1ms | ActiveRecord: 0.7ms | Allocations: 10118)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:50:05 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1383)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 5836)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.3ms | Allocations: 6202)
+
+
+Started GET "/brewers/new" for 172.30.0.1 at 2022-05-28 01:50:07 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/new.html.erb within layouts/application
+  Rendered brewers/_form.html.erb (Duration: 3.1ms | Allocations: 1816)
+  Rendered brewers/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2126)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 6578)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 6915)
+
+
+Started POST "/brewers" for 172.30.0.1 at 2022-05-28 01:50:24 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "brewer"=>{"first_name"=>"John", "last_name"=>"Bates", "club"=>"Horsemen of the Hopocolypse"}, "commit"=>"Create Brewer"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/brewers_controller.rb:27:in `block in create'
+  [1m[36mBrewer Create (0.7ms)[0m  [1m[32mINSERT INTO "brewers" ("first_name", "last_name", "club", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "John"], ["last_name", "Bates"], ["club", "Horsemen of the Hopocolypse"], ["created_at", "2022-05-28 01:50:24.603169"], ["updated_at", "2022-05-28 01:50:24.603169"]]
+  ↳ app/controllers/brewers_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/brewers_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/brewers/3
+Completed 302 Found in 11ms (ActiveRecord: 1.5ms | Allocations: 2751)
+
+
+Started GET "/brewers/3" for 172.30.0.1 at 2022-05-28 01:50:24 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 29)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 3]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 0.2ms | Allocations: 87)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2407)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 6851)
+Completed 200 OK in 27ms (Views: 22.7ms | ActiveRecord: 0.5ms | Allocations: 7636)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:50:29 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1304)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 5766)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.2ms | Allocations: 6035)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:50:42 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.3ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2477)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 7004)
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 0.6ms | Allocations: 7779)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:50:45 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1301)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 5753)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.3ms | Allocations: 6022)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:52:46 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 29.8ms | Allocations: 1295)
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:52:50 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (1.1ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 38)
+  [1m[36mScoreSheet Load (0.8ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.4ms | Allocations: 129)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 22.9ms | Allocations: 2602)
+  Rendered layout layouts/application.html.erb (Duration: 4189.3ms | Allocations: 48665)
+Completed 200 OK in 4192ms (Views: 4190.8ms | ActiveRecord: 0.3ms | Allocations: 48934)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 794.5ms | Allocations: 12265)
+Completed 200 OK in 839ms (Views: 795.6ms | ActiveRecord: 9.1ms | Allocations: 17457)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:53:09 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 2.8ms | Allocations: 212)
+  [1m[36mScoreSheet Load (0.5ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 2.2ms | Allocations: 290)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 15.6ms | Allocations: 3882)
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 8653)
+Completed 200 OK in 40ms (Views: 35.3ms | ActiveRecord: 0.8ms | Allocations: 10005)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:53:10 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1525)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 5976)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.3ms | Allocations: 6342)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:53:13 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:44
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2495)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 6937)
+Completed 200 OK in 29ms (Views: 24.0ms | ActiveRecord: 0.7ms | Allocations: 7721)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:54:09 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.1ms | Allocations: 212)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:45
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 1.4ms | Allocations: 290)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 3887)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 8658)
+Completed 200 OK in 37ms (Views: 31.1ms | ActiveRecord: 0.7ms | Allocations: 10009)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:54:51 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1537)
+  Rendered layout layouts/application.html.erb (Duration: 1046.9ms | Allocations: 5989)
+Completed 200 OK in 1050ms (Views: 1048.2ms | ActiveRecord: 0.4ms | Allocations: 6355)
+
+
+Started GET "/brewers/3" for 172.30.0.1 at 2022-05-28 01:54:57 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 29)
+  [1m[36mScoreSheet Load (0.5ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 3]]
+  ↳ app/views/brewers/show.html.erb:45
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 0.2ms | Allocations: 87)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 36.3ms | Allocations: 2397)
+  Rendered layout layouts/application.html.erb (Duration: 57.6ms | Allocations: 6851)
+Completed 200 OK in 69ms (Views: 58.8ms | ActiveRecord: 0.9ms | Allocations: 7636)
+
+
+Started GET "/brewers/3" for 172.30.0.1 at 2022-05-28 01:55:42 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 1.5ms | Allocations: 214)
+  [1m[36mScoreSheet Load (0.5ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 3]]
+  ↳ app/views/brewers/show.html.erb:45
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 1.8ms | Allocations: 266)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 13.3ms | Allocations: 3786)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 8558)
+Completed 200 OK in 40ms (Views: 33.4ms | ActiveRecord: 0.9ms | Allocations: 9910)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:55:54 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.5ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1532)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 5983)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.5ms | Allocations: 6349)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:55:59 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:45
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2500)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 6942)
+Completed 200 OK in 27ms (Views: 23.2ms | ActiveRecord: 0.5ms | Allocations: 7726)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:56:02 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1307)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 5757)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.2ms | Allocations: 6027)
+
+
+Started GET "/brewers/1" for 172.30.0.1 at 2022-05-28 01:57:05 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.4ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.4ms | Allocations: 955)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Brewer with 'id'=1):
+  
+app/controllers/brewers_controller.rb:63:in `set_brewer'
+Started GET "/brewers/1.json" for 172.30.0.1 at 2022-05-28 01:57:07 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms | Allocations: 938)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Brewer with 'id'=1):
+  
+app/controllers/brewers_controller.rb:63:in `set_brewer'
+Started GET "/brewers/2.json" for 172.30.0.1 at 2022-05-28 01:57:28 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering brewers/show.json.jbuilder
+  Rendered brewers/_brewer.json.jbuilder (Duration: 2.4ms | Allocations: 209)
+  Rendered brewers/show.json.jbuilder (Duration: 6.1ms | Allocations: 595)
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 0.3ms | Allocations: 1545)
+
+
+Started GET "/brewers/" for 172.30.0.1 at 2022-05-28 01:57:37 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1304)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 5847)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.3ms | Allocations: 6116)
+
+
+Started GET "/brewers/3" for 172.30.0.1 at 2022-05-28 01:57:39 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 29)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 3]]
+  ↳ app/views/brewers/show.html.erb:45
+  Rendered collection of score_sheets/_score_sheet.html.erb [1 times] (Duration: 0.2ms | Allocations: 87)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2418)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 6860)
+Completed 200 OK in 32ms (Views: 26.5ms | ActiveRecord: 0.7ms | Allocations: 7635)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:57:43 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1325)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 5775)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.3ms | Allocations: 6044)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:57:46 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.2ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:45
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2489)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 6931)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.4ms | Allocations: 7706)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:57:48 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1310)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 5836)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.3ms | Allocations: 6106)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:57:50 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.4ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:45
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2482)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 6925)
+Completed 200 OK in 29ms (Views: 25.1ms | ActiveRecord: 0.6ms | Allocations: 7700)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:58:02 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1295)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 5745)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.3ms | Allocations: 6014)
+
+
+Started GET "/brewers/2" for 172.30.0.1 at 2022-05-28 01:58:03 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.2ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/show.html.erb within layouts/application
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  [1m[36mScoreSheet Load (0.3ms)[0m  [1m[34mSELECT "score_sheets".* FROM "score_sheets" WHERE "score_sheets"."brewer_id" = $1[0m  [["brewer_id", 2]]
+  ↳ app/views/brewers/show.html.erb:45
+  Rendered collection of score_sheets/_score_sheet.html.erb [2 times] (Duration: 0.2ms | Allocations: 111)
+  Rendered brewers/show.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2486)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 6928)
+Completed 200 OK in 28ms (Views: 24.1ms | ActiveRecord: 0.5ms | Allocations: 7704)
+
+
+Started GET "/brewers/2/edit" for 172.30.0.1 at 2022-05-28 01:58:08 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers" WHERE "brewers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/brewers_controller.rb:63:in `set_brewer'
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/edit.html.erb within layouts/application
+  Rendered brewers/_form.html.erb (Duration: 3.4ms | Allocations: 1880)
+  Rendered brewers/edit.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2245)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 6687)
+Completed 200 OK in 28ms (Views: 23.7ms | ActiveRecord: 0.3ms | Allocations: 7515)
+
+
+Started GET "/brewers" for 172.30.0.1 at 2022-05-28 01:58:10 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BrewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering brewers/index.html.erb within layouts/application
+  [1m[36mBrewer Load (0.3ms)[0m  [1m[34mSELECT "brewers".* FROM "brewers"[0m
+  ↳ app/views/brewers/index.html.erb:6
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/_brewer.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered brewers/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1328)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 5856)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.3ms | Allocations: 6125)
+
+

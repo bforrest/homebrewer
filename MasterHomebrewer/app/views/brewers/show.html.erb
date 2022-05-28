@@ -2,12 +2,20 @@
 
 <%= render @brewer %>
 
-<div>
-  <%= link_to "Edit this brewer", edit_brewer_path(@brewer) %> |
-  <%= link_to "Back to brewers", brewers_path %>
-
-  <%= button_to "Destroy this brewer", @brewer, method: :delete %>
-</div>
+<div class="row align-items-center">
+<div class="col">
+  <a href="<%= edit_brewer_path(@brewer) %>" class="link-info">
+  <i class="bi bi-pencil-square"></i> Edit this brewer</a>
+  </div>
+  <div class="col">
+  <a href="<%= brewers_path %>" class="link-success">
+    <i class="bi bi-arrow-left"></i> Back to brewers 
+  </a>
+  </div>
+  <div class="col">
+  <%= link_to "Destroy this brewer", @brewer, method: :delete, class:"link-warning" %>
+  </div>
+  </div>
 
 <h2>Add score_sheet</h2>
 
