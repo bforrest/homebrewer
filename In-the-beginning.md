@@ -120,6 +120,11 @@ docker-compose exec web \
 docker-compose exec web \
     bin/rails g scaffold Score subcategory:string score:integer
 
+## CSS With Tailwind CSS
+
+docker-compose exec web bundle add tailwindcss-rails
+docker-compose exec web bin/rails tailwindcss:install
+## Random Notes From Master Homebrewer Program
 
 ```text
 When thinking of beer, mead, and cider styles, the
