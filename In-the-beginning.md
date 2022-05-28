@@ -146,3 +146,11 @@ Rank
 
 Awards
 
+
+
+## New Rails App
+
+rails new <app_name> -d=postgres --css=bootstrap
+
+rails new wtf_app-d=postgres --css=bootstrap
+ 
