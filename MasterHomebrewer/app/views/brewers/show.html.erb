@@ -2,52 +2,54 @@
 
 <%= render @brewer %>
 
-<div class="row align-items-center">
-<div class="col">
-  <a href="<%= edit_brewer_path(@brewer) %>" class="link-info">
-  <i class="bi bi-pencil-square"></i> Edit this brewer</a>
+<br>
+<div class="row align-items-center col-6"">
+  <div class="col">
+    <a href="<%= brewers_path %>" class="link-success">
+      <i class="bi bi-arrow-left"></i> Back to brewers 
+    </a>
   </div>
   <div class="col">
-  <a href="<%= brewers_path %>" class="link-success">
-    <i class="bi bi-arrow-left"></i> Back to brewers 
-  </a>
+    <a href="<%= edit_brewer_path(@brewer) %>" class="link-info">
+    <i class="bi bi-pencil-square"></i> Edit this brewer</a>
   </div>
   <div class="col">
-  <%= link_to "Destroy this brewer", @brewer, method: :delete, class:"link-warning" %>
+    <a href="<%= brewer_path(@brewer) %>" data-method="delete" class="link-warning">
+    <i class="bi bi-trash"></i> Delete this Brewer</a>
   </div>
-  </div>
-
-<h2>Add score_sheet</h2>
+</div>
+<br>
 
 
 <%= form_with model: [ @brewer, @brewer.score_sheets.build] do 
   |form| %>
-  <p>
-    <%= form.label :category %><br />
-    <%= form.text_field :category %>
-  </p>
-  <p>
-    <%= form.label :score %><br />
-    <%= form.text_field :score %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
+  <div class="card col-6">
+    <div class="card-header">Add Score Sheet</div>
+    <div class="card-body">
+      <p>
+        <%= form.label :category %><br />
+        <%= form.text_field :category %>
+      </p>
+      <p>
+        <%= form.label :score %><br />
+        <%= form.text_field :score %>
+      </p>
+      <p>
+        <%= form.submit %>
+      </p>
+    </div>
+  </div>
 <% end %>
-
-<h2>Score Sheets</h2>
-
-<table>
-<tr>
-  <th>Category</th>
-  <th>Score</th>
-</tr>
-<%= @brewer.score_sheets.each do |score_sheet| %>
-  <tr>
-    <td><%= score_sheet.category %></td>
-    <td><%= score_sheet.score %></td>
-  </tr>
-<% end %>
-</table>
-
-<%= render @brewer.score_sheets %>
+<br>
+<div class="card col-6" id="score_sheets">
+  <div class="card-header">Scores</div>
+  <div class="card-body">
+    <a href="#" class="card-link">Add Score?</a>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Score</th>
+      </tr>
+      <%= render @brewer.score_sheets %>
+  </div>
+</div>

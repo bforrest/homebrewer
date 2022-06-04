@@ -8,6 +8,8 @@ class BrewersController < ApplicationController
 
   # GET /brewers/1 or /brewers/1.json
   def show
+    #@brewer = Brewer.find(params[:id])
+    #@brewer.score_sheets = ScoreSheet.where(brewer_id: @brewer.id)
   end
 
   # GET /brewers/new
